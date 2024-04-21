@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>THACO AUTO</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- site icon -->
+
+        <link rel="apple-touch-icon" href="./pluto-1.0.0/images/logotc.png">
+    <link rel="shortcut icon" href="./pluto-1.0.0/images/logotc.png">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css" />
+ 
+    <!-- <link rel="stylesheet" href="./pluto-1.0.0/css/responsive.css" /> -->
+   
+    <!-- app anh Hoai -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./assets/script/library/read-excel-file.min.js"></script>
+    <link rel="stylesheet" href="./assets/script/library/bootstrap.min.js">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/script/library/jquery.js"></script>
+    <script src="./assets/script/library/xlsx.full.min.js"></script>
+    <script src="./assets/script/library/xlsx.zahl.js"></script>
+        <!-- ----------- -->
+
+
+
+</head>
+</head>
+
+<body class="dashboard dashboard_1">
+    <div class="header">
+        <div class="css_logo">
+            <img style="width: 170px;" src="./assets/img/logo.png" alt="">
+        </div>
+        <div class="css_title" style="font-size: 25px; font-weight: bold;">TỔNG HỢP FILE CHUYỂN GIAO</div>
+        <div class="css_animation">
+            <div class="words word-1">
+                <span>A</span>
+                <span>U</span>
+                <span>T</span>
+                <span>O</span>
+              </div>
+        </div>
+    </div>
+    <div style="padding: 20px;" class="wrap-content">
+        <div style="margin: 0px 0px;" class="row row-cus">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <label style="font-weight: bold;" class="input-group-text" for="inputGroupFile01">Nạp File danh mục cần tổng hợp</label>
+                    <input accept=".xlsx" id="file-input" type="file" class="form-control form-input-cus" id="inputGroupFile01">
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <span style="font-weight: bold; margin-right: 20px;">Nhấn nút tải file để thực hiện thao tác tổng hợp file chuyển giao:</span>
+                     <!-- <button style="font-family: tomaho;font-size: 22px; " id="openFile"  class="custom-btn btn-2">Tải file</button> -->
+                     <button id="openFile" class="glow-on-hover" type="button">Tải file</button>
+                </div>
+            </div>
+            <div style="margin-top: 25px;" class="col-md-12">
+              <div style="font-weight: bold;text-align: center;margin-bottom: 10px;" class="info-TH">THÔNG TIN FILE TỔNG HỢP</div>
+              <div class="br_ng"></div>
+              <div style="font-weight: bold;" class="row">
+                <div class="col-md-6 mt-2">Tổng số file PDF:</div>
+                <div class="col-md-6 mt-2"><span id="totalPDF">0</span> &nbsp;file</div>
+                <div class="col-md-6 mt-2">Tổng số file EXCEL:</div>
+                <div class="col-md-6 mt-2"> <span id="total2D">0</span> &nbsp;file</div>
+                <div class="col-md-6 mt-2">Tổng số file POWER POINT:</div>
+                <div class="col-md-6 mt-2"><span id="total3D">0</span> &nbsp;file</div>
+                <div class="col-md-6 mt-2">Tổng số file WORD:</div>
+                <div class="col-md-6 mt-2"><span id="totalTSKT">0</span> &nbsp;file</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="css_footer">
+        <div >Copyright©2024 Phan Thanh Hoài</div>
+    </div>
+    
+        <div id="notification" class="notification">Chúc bạn một ngày làm việc vui vẻ !</div>
+        <table id="content-excel" style="opacity: 0; position: fixed;top: 0px"></table>
+        
+        <div id="level1" class="level1" style="display: none;"></div>
+        <div id="level2" class="level2">
+            <!-- <button id="getData" style="color: white; background: #00529c; font-size: 22px;" class="btn">Lấy dữ liệu</button> -->
+            <button id="getData" class="glow-on-hover" type="button">Lấy dữ liệu</button>
+        </div>
+        <div id="loading" style="display: none; position: fixed;">
+            <div class="level1"></div>
+            <div id="loading" style="position: fixed;" class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div>
+        
+        <!-- <button id="oktest">fkodf</button> -->
+    </body>
+         <!-- anh hoai -->
+            <script src="./assets/script/function/function.js"></script>
+            <script src="./assets/script/main.js"></script>
+            <script src="./assets/script/library/bootstrap.bundle.min.js" ></script>
+        <!-- jQuery -->
+   
+        <!-- custom js -->
+       
+
+
+
+</html>
