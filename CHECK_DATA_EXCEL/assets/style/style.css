@@ -379,3 +379,34 @@ button {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+
+/* abx */
+.wrap-box-add-ss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-add-ss {
+  min-width: 500px;
+  min-height: 300px;
+  box-shadow: rgb(0 82 156) 0px 4px 16px, rgb(0 0 255 / 5%) 0px 8px 32px;
+  border-radius: 7px;
+}
+.btn{
+  background: #00529c;
+  color: #f9f9f9;
+}
+.btn:hover {
+  background: #00529c;
+  color: #f9f9f9;
+  box-shadow: 2px 2px 15px #00529c;
+}
+.content-info {
+  padding: 0px 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.content-info span{
+  font-weight: 500;
+}

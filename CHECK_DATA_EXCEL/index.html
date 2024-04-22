@@ -44,7 +44,7 @@
         <div class="css_logo">
             <img style="width: 170px;" src="./assets/img/logo.png" alt="">
         </div>
-        <div class="css_title" style="font-size: 25px; font-weight: bold;">TỔNG HỢP FILE CHUYỂN GIAO</div>
+        <div class="css_title" style="font-size: 25px; font-weight: bold;">KIỂM TRA CỤM LINH KIỆN DÙNG CHUNG</div>
         <div class="css_animation">
             <div class="words word-1">
                 <span>A</span>
@@ -54,49 +54,31 @@
               </div>
         </div>
     </div>
-    <div style="padding: 20px;" class="wrap-content">
-        <div style="margin: 0px 0px;" class="row row-cus">
-            <div class="col-md-6">
-                <div class="input-group mb-3">
-                    <label style="font-weight: bold;" class="input-group-text" for="inputGroupFile01">Nạp File danh mục cần tổng hợp</label>
-                    <input accept=".xlsx" id="file-input" type="file" class="form-control form-input-cus" id="inputGroupFile01">
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                    <span style="font-weight: bold; margin-right: 20px;">Nhấn nút tải file để thực hiện thao tác tổng hợp file chuyển giao:</span>
-                     <!-- <button style="font-family: tomaho;font-size: 22px; " id="openFile"  class="custom-btn btn-2">Tải file</button> -->
-                     <button id="openFile" class="glow-on-hover" type="button">Tải file</button>
+    <div style="padding: 20px;" class="wrap-content wrap-box-add-ss">
+        <!-- //
+       
+              <div class="drop_box">
+                <input type="file" hidden accept=".xlsx" id="fileID" style="display:none;">
+                <button class="btn">Choose File</button>
                 </div>
+
+        // -->
+        <div class="box-add-ss">
+            <div style="text-align: center; font-weight: bold; font-size: 22px; padding: 20px 0px;">THÔNG TIN FILE ĐÃ NẠP</div>
+            <div class="content-info">File gốc: <span class="file-goc">chưa nạp file</span></div>
+            <div class="content-info">File so sánh: <span class="file-ssz">chưa nạp file</span></div>
+            <div class="wrap-input-file" style="text-align: center;">
+                <input class="input-goc" type="file" hidden accept=".xlsx" id="fileID" style="display:none;">
+                <button class="btn button-goc">Nạp file gốc</button>
+                <button class="btn button-ss" style="margin-left: 0px;">Nạp file cần so sánh</button>
             </div>
-            <div style="margin-top: 25px;" class="col-md-12">
-              <div style="font-weight: bold;text-align: center;margin-bottom: 10px;" class="info-TH">THÔNG TIN FILE TỔNG HỢP</div>
-              <div class="br_ng"></div>
-              <div style="font-weight: bold;" class="row">
-                <div class="col-md-6 mt-2">Tổng số file PDF:</div>
-                <div class="col-md-6 mt-2"><span id="totalPDF">0</span> &nbsp;file</div>
-                <div class="col-md-6 mt-2">Tổng số file EXCEL:</div>
-                <div class="col-md-6 mt-2"> <span id="total2D">0</span> &nbsp;file</div>
-                <div class="col-md-6 mt-2">Tổng số file POWER POINT:</div>
-                <div class="col-md-6 mt-2"><span id="total3D">0</span> &nbsp;file</div>
-                <div class="col-md-6 mt-2">Tổng số file WORD:</div>
-                <div class="col-md-6 mt-2"><span id="totalTSKT">0</span> &nbsp;file</div>
-              </div>
-            </div>
-          </div>
+        </div>
+
     </div>
     <div class="css_footer">
         <div >Copyright©2024 Phan Thanh Hoài</div>
     </div>
-    
-        <div id="notification" class="notification">Chúc bạn một ngày làm việc vui vẻ !</div>
-        <table id="content-excel" style="opacity: 0; position: fixed;top: 0px"></table>
-        
-        <div id="level1" class="level1" style="display: none;"></div>
-        <div id="level2" class="level2">
-            <!-- <button id="getData" style="color: white; background: #00529c; font-size: 22px;" class="btn">Lấy dữ liệu</button> -->
-            <button id="getData" class="glow-on-hover" type="button">Lấy dữ liệu</button>
-        </div>
+    <div id="notification" class="notification">Chúc bạn một ngày làm việc vui vẻ !</div>
         <div id="loading" style="display: none; position: fixed;">
             <div class="level1"></div>
             <div id="loading" style="position: fixed;" class="loader">
