@@ -43,7 +43,6 @@ var start = () => {
     });
     input.addEventListener("change", function (e) {
         file = e.target.files[0] || "";
-        hideloading();
         readFileExcel(file)
         var fileName = e.target.files[0].name;
         if (actionClick == 1) {
@@ -110,6 +109,7 @@ let getIndex = (value, arr) => {
 
 
 let hadleDataFileGoc = (arrs) => {
+    hideloading();
     arrlistGoc = [];
     let indexTitle = null;
     let indexDes = null;
@@ -151,6 +151,7 @@ let hadleDataFileSS = (arrs) => {
     // console.log('finalSS:', arrlistSS)
     if (arrlistGoc.length > 0) {
         compareDataTwoFile()
+        // console.log("haha")
     }
 
 }
@@ -176,6 +177,7 @@ let compareDataTwoFile = () => {
 
 let exportListExcel = () => {
     arrlistGoc.unshift(['Tên', "Mã số", 'Name', 'Dự án'])
+    // console.log("haha")
     var d = new Date();
     let Today = `${d.getDate()}_${d.getMonth() + 1}_${d.getFullYear()}`;
     var wb = XLSX.utils.book_new();
@@ -184,4 +186,5 @@ let exportListExcel = () => {
     // ws["!merges"] = merge;
     XLSX.utils.book_append_sheet(wb, ws, "NEW DATA");
     XLSX.writeFile(wb, `Dữ liệu xuất ngày ${Today}.xlsx`, { numbers: XLSX_ZAHL_PAYLOAD, compression: true });
+    hideloading()
 }
