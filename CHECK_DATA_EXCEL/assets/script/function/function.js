@@ -162,7 +162,9 @@ let compareDataTwoFile = () => {
         let status = true;
         arrlistGoc.forEach((item2, index2)=> {
             if (item1[2] == item2[2]) {
-                arrlistGoc[index2][3] = `${ arrlistGoc[index2][3]} + ${item1[3]}`
+                if (!arrlistGoc[index2][3].includes(item1[3])) {
+                    arrlistGoc[index2][3] = `${ arrlistGoc[index2][3]} + ${item1[3]}`
+                }
                 status = false;
             }
         })
